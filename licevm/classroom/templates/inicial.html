@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Licevm</title>
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <!--BOOTSTRAP: scripts e estilos-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!--link e script da Timeline.js-->
+        <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+        <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+    <!--timeline-->
+    <script src="../js/vis.js"></script>
+    <link href="../css/vis.css" rel="stylesheet" type="text/css" />
+
+    <script src="{% static 'js/vis.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/vis.css' %}">
+
+    <!--link da folha de estilos "estilo"-->
+    <link rel="stylesheet" href="{% static 'estilos/estilos.css' %}">
+</head>
+<body style="background: #E0DCD6;">
+
+<!-- Navigation
+    ==========================================-->
+<nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo" href="index.html"><h1>LICEVM</h1></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right" style="height: 77px;">
+                <li style="height: 100%;"><a style="top: 50%; transform: translateY(-50%);" href="#tf-home" class="page-scroll">Home</a></li>
+                <li style="height: 100%;"><a style="top: 50%; transform: translateY(-50%);" href="#tf-about" class="page-scroll">Sobre</a></li>
+                <li style="height: 100%;"><a style="top: 50%; transform: translateY(-50%);" href="#tf-services" class="page-scroll">Serviços</a></li>
+                <li style="height: 100%;"><a style="top: 50%; transform: translateY(-50%);" href="#tf-clients" class="page-scroll">Clientes</a></li>
+                <li style="height: 100%;"><a style="top: 50%; transform: translateY(-50%);" href="#tf-works" class="page-scroll">Portfolio</a></li>
+                <li style="height: 100%;"><a style="top: 50%; transform: translateY(-50%);" href="#tf-contact" class="page-scroll">Contato</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+        <!--timeline-->
+        <div id="visualization"></div>
+
+        <script type="text/javascript">
+            // DOM element where the Timeline will be attached
+            var container = document.getElementById('visualization');
+
+            // Create a DataSet (allows two way data-binding)
+            var items = new vis.DataSet([
+                {id: 1, content: 'item 1', start: '2013-04-20'},
+                {id: 2, content: 'item 2', start: '2013-04-14'},
+                {id: 3, content: 'item 3', start: '2013-04-18'},
+                {id: 4, content: 'item 4', start: '2013-04-16', end: '2013-04-19'},
+                {id: 5, content: 'item 5', start: '2013-04-25'},
+                {id: 6, content: 'item 6', start: '2013-04-27'}
+            ]);
+
+            // Configuration for the Timeline
+            var options = {};
+
+            // Create a Timeline
+            var timeline = new vis.Timeline(container, items, options);
+        </script>
+
+        <!--
+        <div class="col-lg-12">
+            <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+        </div>
+        -->
+
+
+        <div class="col-lg-8 col-lg-offset-2 conteudo-geral">
+            <ul class="nav nav-tabs tabs-conteudo col-lg-12" style="padding: 0;">
+                <li class="col-lg-6" style="width: 50%;"><a href="#">Conteúdo</a></li>
+                <li class="col-lg-6" style="width: 50%;"><a href="#" style="margin-right: 0px !important;">Questões do Enem</a></li>
+            </ul>
+            <div class="conteudo-dinanico">
+                <div class="video-frame">
+                    <iframe width="420" height="315"
+                            src="https://www.youtube.com/embed/PwO-XPLSFII">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            // The TL.Timeline constructor takes at least two arguments:
+            // the id of the Timeline container (no '#'), and
+            // the URL to your JSON data file or Google spreadsheet.
+            // the id must refer to an element "above" this code,
+            // and the element must have CSS styling to give it width and height
+            // optionally, a third argument with configuration options can be passed.
+            // See below for more about options.
+            timeline = new TL.Timeline('timeline-embed',
+                'https://docs.google.com/spreadsheets/d/1cWqQBZCkX9GpzFtxCWHoqFXCHg-ylTVUWlnrdYMzKUI/pubhtml');
+        </script>
+</body>
+</html>

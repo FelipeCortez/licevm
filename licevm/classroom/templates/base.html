@@ -1,0 +1,17 @@
+{% spaceless %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>LICEVM</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'marksapp/style.css' %}">
+    </head>
+    <body>
+        {% block content %}
+        Olá...
+        {% endblock %}
+    </body>
+</html>
+{% endspaceless %}

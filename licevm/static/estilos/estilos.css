@@ -1,0 +1,79 @@
+/*----FONTS----*/
+@font-face {
+    font-family: "newrotic";
+    src: url("../fonts/Newrotic.ttf") format("truetype");
+}
+
+.conteudo-geral{
+    margin-top: 30px;
+    height: 800px;
+    border-radius: 5px;
+    font-family: Euphemia;
+    color: black;
+    border-radius: 5px;
+    background: #F4F1EB;
+    padding: 0;
+}
+
+.tabs-conteudo{
+    background: #54334C;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.tabs-conteudo li{
+    padding: 0;
+    text-align: center;
+}
+.tabs-conteudo a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.tabs-conteudo a:hover{
+    color: cadetblue;
+    background: #C9602B;
+}
+
+/*-----TIMELINE-----*/
+#visualization{
+    background: #54334C;
+    margin-top: 100px;
+}
+.vis-time-axis .vis-text{
+    color: white;
+}
+.vis-item.vis-box{
+    cursor: pointer;
+}
+.vis-item{
+    color: white;
+    border-color: cadetblue;
+    background-color: cadetblue;
+}
+.vis-item.vis-selected{
+    border-color: #C9602B;
+    background-color: #C9602B;
+}
+.vis-range{
+    cursor: pointer
+}
+
+/*------NAVBAR-------*/
+#tf-menu{
+    background: #54334C;
+}
+.navbar-default .navbar-nav>li>a{
+    color: cadetblue;
+}
+.logo{
+    line-height: 100%;
+    font-family: newrotic;
+    color: cadetblue !important;
+}
+.logo h1{
+    margin-top: 0px;
+}
+
+.video-frame{
+    text-align: center;
+}
