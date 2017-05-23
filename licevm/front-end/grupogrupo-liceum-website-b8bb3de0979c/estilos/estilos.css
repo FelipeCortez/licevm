@@ -110,9 +110,22 @@
     border-radius: 5px;
 }
 
+label, input-login{
+    display: block;
+}
+
+label{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
 .login-button{
+    background-color: #01db01;
+    color: #ffffff;
+    letter-spacing: 5px;
+    cletter-spacing: 5px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
     position: relative;
     border-radius: 5px;
     width: 50%;
