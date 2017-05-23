@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--BOOTSTRAP: scripts e estilos-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!--link e script da Timeline.js-->
+	<link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+	<script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+	<link rel="stylesheet" href="https://bootswatch.com/cerulean/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/w3.css">
+
+	<title>LICEVM</title>
+	
+	<script type="text/javascript" src="js/scripts.js">
+	</script>
+
+</head>
+
+<body>
+	<header>
+		<!-- Barra superior do site-->
+		<div class="container">
+			<div class="row">
+				<a href="index.html">
+					<div class="col-xs-12 col-md-12">
+						<h1 class="title">LICEVM</h1>
+					</div>
+				</a>
+	      	</div>
+		</div>
+
+		<!-- Barra de navegacao -->
+		<nav class="navbar navbar-inverse">
+		  	<div class="container-fluid">
+		   		<div class="navbar-header">
+		   	   		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="true">
+		   	   			<span class="sr-only">Toggle navigation</span>
+		   	   	  		<span class="icon-bar"></span>
+		   	     		<span class="icon-bar"></span>
+		   	     		<span class="icon-bar"></span>
+		   	   		</button>
+		   	   		<a class="navbar-brand" href="index.html">LICEVM</a>
+		   	 	</div>
+
+		    	<div class="collapse navbar-collapse" role="navigation" id="bs-example-navbar-collapse-2" aria-expanded="true">
+		    	  	<ul class="nav navbar-nav">
+		    	    	<li class="active"><a href="index.html">Início<span class="sr-only">(current)</span></a></li>
+		    	    	<li><a href="Progresso.html">Progesso</a></li>
+		    	    	<li><a href="Questões.html">Questões</a></li>
+		    	  	</ul>
+		    	  
+		    	  	<!-- Barra de pesquisa -->
+		    	  	<form class="navbar-form navbar-right" role="search">
+		    	    	<div class="input-group">
+		    	    	  	<input type="text" class="form-control" placeholder="Buscar...">
+		    	    	  	<span class="input-group-btn">
+							    <button class="btn btn-default" type="button">
+							      	<span class="glyphicon glyphicon-search"></span>
+							    </button>
+      						</span>
+		     		   </div>
+		     		 </form>
+
+		    	  	<ul class="nav navbar-nav navbar-right">
+		    	  		<li><a href="Conta.html"><span class="glyphicon glyphicon-user"></span>Conta</a></li>
+		    	  	</ul>
+
+		    	</div>
+		  	</div>
+		</nav>
+	</header>
+
+	<section class="body">
+
+		<div class="col-lg-12"> <!--o nome dessa classe define a largura da div, bem como o espaçamento para que ela apareça-->
+            <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+        </div>
+
+		 <script type="text/javascript">
+            // The TL.Timeline constructor takes at least two arguments:
+            // the id of the Timeline container (no '#'), and
+            // the URL to your JSON data file or Google spreadsheet.
+            // the id must refer to an element "above" this code,
+            // and the element must have CSS styling to give it width and height
+            // optionally, a third argument with configuration options can be passed.
+            // See below for more about options.
+            timeline = new TL.Timeline('timeline-embed',
+                'https://docs.google.com/spreadsheets/d/1cWqQBZCkX9GpzFtxCWHoqFXCHg-ylTVUWlnrdYMzKUI/pubhtml');
+        </script>
+
+        </br>
+        <!--Destaques-->
+		<div>
+			<h2>Destaques</h2>
+			<div class="container-fluid">
+			    <div class="row">
+			        <figure></figure>
+				</div>
+				<div class="row">
+			        <figure></figure>
+				</div>
+				<div class="row">
+			        <figure></figure>
+				</div>
+			</div>
+		</div>
+
+		<!-- Slideshow -->
+		<div class="slideshow-container">
+			<div class="mySlides fade box">
+			 	<div class="numbertext">1 / 3</div>
+			 	<img src="imgs/independência.jpg" alt="slide" class="slide-img">
+			</div>
+
+			<div class="mySlides fade box">
+				<div class="numbertext">2 / 3</div>
+				<img src="imgs/primeira-guerra.jpg" alt="slide" class="slide-img">  
+			</div>
+
+			<div class="mySlides fade box">
+				<div class="numbertext">3 / 3</div>
+				<img src="imgs/linguagens.jpg" alt="slide" class="slide-img">
+			</div>
+		</div>
+
+		<br>
+
+		<div class="center">
+			<span class="dot"></span> 
+			<span class="dot"></span>
+			<span class="dot"></span> 
+		</div>
+
+		<script>
+			showSlides();
+		</script>
+
+	</section>
+
+	<footer class="center">
+		<h3>Informações</h3>
+		<p>licevm.com.br CPNJ 01.654.289/0001-04</p>
+		<p>Caixa Postal 1524 - Campus Universitário Lagoa Nova, CEP 59078-970 | Natal/RN - Brasil</p>
+	</footer>
+</body>
+</html>
