@@ -21,16 +21,30 @@
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="css/w3.css">
 
+	<!--Para nova timeline-->
+    <style type="text/css">
+        body {
+            font-size: 10pt;
+            font-family: verdana, sans, arial, sans-serif;
+        }
+    </style>
+
+	<script type="text/javascript" src="https://almende.github.io/chap-links-library/js/timeline/timeline.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://almende.github.io/chap-links-library/js/timeline/timeline.css">
+
 	<title>LICEVM</title>
 	
 	<script type="text/javascript" src="js/scripts.js">
 	</script>
 
+
 </head>
 
-<body>
+<body onload="drawVisualization();">
+
 	<header>
 		<!-- Barra superior do site-->
+		<!--
 		<div class="container">
 			<div class="row">
 				<a href="index.html">
@@ -40,6 +54,7 @@
 				</a>
 	      	</div>
 		</div>
+		-->
 
 		<!-- Barra de navegacao -->
 		<nav class="navbar navbar-inverse">
@@ -82,13 +97,17 @@
 		</nav>
 	</header>
 
-	<section class="body">
+	<div id="mytimeline" class="blue-background"></div>
+
+	</br>
+
+	<section class="timeline">
 
 		<div class="col-lg-12"> <!--o nome dessa classe define a largura da div, bem como o espaçamento para que ela apareça-->
             <div id='timeline-embed' style="width: 100%; height: 600px"></div>
         </div>
 
-		 <script type="text/javascript">
+		<script type="text/javascript">
             // The TL.Timeline constructor takes at least two arguments:
             // the id of the Timeline container (no '#'), and
             // the URL to your JSON data file or Google spreadsheet.
@@ -96,13 +115,13 @@
             // and the element must have CSS styling to give it width and height
             // optionally, a third argument with configuration options can be passed.
             // See below for more about options.
-            timeline = new TL.Timeline('timeline-embed',
-                'https://docs.google.com/spreadsheets/d/1cWqQBZCkX9GpzFtxCWHoqFXCHg-ylTVUWlnrdYMzKUI/pubhtml');
-        </script>
+            timeline = new TL.Timeline('timeline-embed', "timeline_data.json");//'https://docs.google.com/spreadsheets/d/1cWqQBZCkX9GpzFtxCWHoqFXCHg-ylTVUWlnrdYMzKUI/pubhtml');
+        </script>  
+    </section>
 
-        </br>
+    </br>
+    <section class="destaques">
         <!--Destaques-->
-		<div>
 			<h2>Destaques</h2>
 			<div class="container-fluid">
 			    <div class="row">
@@ -115,7 +134,7 @@
 			        <figure></figure>
 				</div>
 			</div>
-		</div>
+		
 
 		<!-- Slideshow -->
 		<div class="slideshow-container">
@@ -135,7 +154,7 @@
 			</div>
 		</div>
 
-		<br>
+		</br>
 
 		<div class="center">
 			<span class="dot"></span> 

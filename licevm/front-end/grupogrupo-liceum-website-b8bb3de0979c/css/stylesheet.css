@@ -9,7 +9,7 @@
 	font-size: 4em;
 }
 
-.body {
+.destaques {
 	max-width: 80%;
     margin: auto;
 }
@@ -18,11 +18,28 @@
 	text-align:center;
 }
 
+.blue-background {
+	background-image: url("../imgs/azul-fundo.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#timeline-embed {
+	/*width: 100%;*/
+}
+
+body {
+	/*margin: auto;*/
+    /*background-image: url("../imgs/azul-fundo.jpg");
+    background-size: 100%;
+    /*background-repeat: no-repeat;*/
+}
+
 header {
 	width:100%;
 	background-color: SteelBlue;
 	/*background-color: DodgerBlue;*/
 }
+
 
 footer {
 	padding: 0.2%;

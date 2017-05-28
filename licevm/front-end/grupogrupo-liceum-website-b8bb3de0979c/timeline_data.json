@@ -1,0 +1,220 @@
+{
+    "title": {
+        "media": {
+
+          "url": "https://www.youtube.com/watch?v=PwO-XPLSFII",
+          "caption": "A História da Segunda Guerra Mundial - 2 Frentes De Batalhas Definidas (Dublado)",
+          "credit": "<a href='https://www.youtube.com/watch?v=PwO-XPLSFII'></a> via YouTube"
+        },
+        "start_date": {
+          "month": "9",
+          "day": "1",
+          "year": "1939"
+        },
+        "text": {
+          "headline": "Conteúdo<br/>1939 - 1945",
+          "text": "<p>A História da Segunda Guerra Mundial - 2 Frentes De Batalhas Definidas</p>"
+        }
+        
+      },
+    "events": [
+      {
+        "media": {
+          "url": "{{ static_url }}/img/examples/houston/family.jpg",
+          "caption": "Houston's mother and Gospel singer, Cissy Houston (left) and cousin Dionne Warwick.",
+          "credit": "Cissy Houston photo:<a href='http://www.flickr.com/photos/11447043@N00/418180903/'>Tom Marcello</a><br/><a href='http://commons.wikimedia.org/wiki/File%3ADionne_Warwick_television_special_1969.JPG'>Dionne Warwick: CBS Television via Wikimedia Commons</a>"
+        },
+        "start_date": {
+          "month": "8",
+          "day": "9",
+          "year": "1963"
+        },
+        "text": {
+          "headline": "A Musical Heritage",
+          "text": "<p>Born in New Jersey on August 9th, 1963, Houston grew up surrounded by the music business. Her mother is gospel singer Cissy Houston and her cousins are Dee Dee and Dionne Warwick.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/fSrO91XO1Ck",
+          "caption": "",
+          "credit": "<a href=\"http://unidiscmusic.com\">Unidisc Music</a>"
+        },
+        "start_date": {
+          "year": "1978"
+        },
+        "text": {
+          "headline": "First Recording",
+          "text": "At the age of 15 Houston was featured on Michael Zager's song, Life's a Party."
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/_gvJCCZzmro",
+          "caption": "A young poised Whitney Houston in an interview with EbonyJet.",
+          "credit": "EbonyJet"
+        },
+        "start_date": {
+          "year": "1978"
+        },
+        "text": {
+          "headline": "The Early Years",
+          "text": "As a teen Houston's credits include background vocals for Jermaine Jackson, Lou Rawls and the Neville Brothers. She also sang on Chaka Khan's, 'I'm Every Woman,' a song which she later remade for the <i>Bodyguard</i> soundtrack which is the biggest selling soundtrack of all time. It sold over 42 million copies worldwide."
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/H7_sqdkaAfo",
+          "caption": "I'm Every Women as performed by Whitney Houston.",
+          "credit": "Arista Records"
+        },
+        "start_date": {
+          "year": "1978"
+        },
+        "text": {
+          "headline": "Early Album Credits",
+          "text": "As a teen Houston's credits include background vocals for Jermaine Jackson, Lou Rawls and the Neville Brothers. She also sang on Chaka Khan's, 'I'm Every Woman,' a song which she later remade for the <i>Bodyguard</i> soundtrack which is the biggest selling soundtrack of all time. It sold over 42 million copies worldwide."
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/A4jGzNm2yPI",
+          "caption": "Whitney Houston and Clive Davis discussing her discovery and her eponymous first album.",
+          "credit": "Sony Music Entertainment"
+        },
+        "start_date": {
+          "year": "1983"
+        },
+        "text": {
+          "headline": "Signed",
+          "text": "Houston is signed to Arista Records after exec Clive Davis sees her performing on stage with her mother in New York."
+        }
+      },
+      
+      
+      {
+        "media": {
+          "url": "https://youtu.be/96aAx0kxVSA",
+          "caption": "\"One Moment In Time\" - Theme song to the 1988 Seoul Olympics",
+          "credit": "Arista Records Inc."
+        },
+        "start_date": {
+          "year": "1988"
+        },
+        "text": {
+          "headline": "\"One Moment In Time\"",
+          "text": "The artist's fame continues to skyrocket as she records the theme song for the Seoul Olympics, 'One Moment In Time.'"
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1989"
+        },
+        "text": {
+          "headline": "Bobby Brown",
+          "text": "Houston and Brown first meet at the Soul Train Music Awards. In an interview with Rolling Stone Magazine, Houston admitted that it was not love at first sight. She turned down Brown's first marriage proposal but eventually fell in love with him."
+        }
+      },
+      {
+        "media": {
+          "url": "//upload.wikimedia.org/wikipedia/commons/d/dd/ABC_-_Good_Morning_America_-_Diane_Sawyer.jpg",
+          "caption": "Diane Sawyer ",
+          "credit": "flickr/<a href='http://www.flickr.com/photos/23843757@N00/194521206/'>Amanda Benham</a>"
+        },
+        "start_date": {
+          "year": "2002"
+        },
+        "text": {
+          "headline": "Crack is Whack",
+          "text": "<p>Houston first publicly admitted to drug use in an interview with Diane Sawyer. The singer coined the term \"Crack is Whack,\" saying that she only used more expensive drugs.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "2005"
+        },
+        "text": {
+          "headline": "Being Bobby Brown",
+          "text": "<p>Being Bobby Brown was a reality show starring Brown and wife Whitney Houston. Houston refused to sign for a second season. A clip of her telling Brown to \"Kiss my ass,\" became a running gag on The Soup.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "caption": "",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "2010"
+        },
+        "text": {
+          "headline": "A Rocky Comeback",
+          "text": "<p>Houston's comeback tour is cut short due to a diminished voice damaged by years of smoking. She was reportedly devastated at her inability to perform like her old self.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "//twitter.com/Blavity/status/851872780949889024",
+          "caption": "Houston, performing on Good Morning America in 2009.",
+          "credit": "<a href='http://commons.wikimedia.org/wiki/File%3AFlickr_Whitney_Houston_performing_on_GMA_2009_4.jpg'>Asterio Tecson</a> via Wikimedia"
+        },
+        "start_date": {
+          "month": "2",
+          "day": "11",
+          "year": "2012"
+        },
+        "text": {
+          "headline": "Whitney Houston<br/> 1963 - 2012",
+          "text": "<p>Houston, 48, was discovered dead at the Beverly Hilton Hotel on  on Feb. 11, 2012. She is survived by her daughter, Bobbi Kristina Brown, and mother, Cissy Houston.</p>"
+        }
+      },
+      {
+        "media": {
+
+          "url": "https://www.youtube.com/watch?v=PwO-XPLSFII",
+          "caption": "A História da Segunda Guerra Mundial - 2 Frentes De Batalhas Definidas (Dublado)",
+          "credit": "<a href='https://www.youtube.com/watch?v=PwO-XPLSFII'></a> via YouTube"
+        },
+        "start_date": {
+          "month": "9",
+          "day": "1",
+          "year": "1939"
+        },
+        "text": {
+          "headline": "Conteúdo 1<br/>1939 - 1945",
+          "text": "<p>A História da Segunda Guerra Mundial - 2 Frentes De Batalhas Definidas</p>"
+        }
+      },
+      {
+        "media": {
+
+          "url": "https://www.youtube.com/watch?v=PwO-XPLSFII",
+          "caption": "A História da Segunda Guerra Mundial - 2 Frentes De Batalhas Definidas (Dublado)",
+          "credit": "<a href='https://www.youtube.com/watch?v=PwO-XPLSFII'></a> via YouTube"
+        },
+        "start_date": {
+          "month": "9",
+          "day": "1",
+          "year": "1939"
+        },
+        "end_date": {
+          "year": "1945"
+        },
+        "text": {
+          "headline": "Conteúdo 2<br/>1939 - 1945",
+          "text": "<p>A História da Segunda Guerra Mundial - 2 Frentes De Batalhas Definidas</p>"
+        }
+        
+      }
+    ]
+}
