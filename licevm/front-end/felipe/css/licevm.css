@@ -79,15 +79,20 @@ body {
 }
 
 .text-fancy {
-    font-family: "Bodoni 72", serif;
+    font-family: "Libre Bodoni", serif;
     font-size: 30px;
+    font-weight: 400;
 }
 
-#visualization {
-    margin-bottom: 30px;
+h1, h2, h3, h4 {
+    font-family: "Linux Libertine", serif;
+    font-weight: 600;
 }
 
 .container > p {
+    font-family: "Linux Libertine", serif;
+    font-weight: 400;
+    font-size: 18px;
     text-rendering: optimizeLegibility;
     line-height: 1.6;
     text-align: justify;
@@ -95,7 +100,7 @@ body {
 
 /* view-source:http://visjs.org/examples/timeline/styling/customCss.html */
 .vis-item {
-    border-color: gray;
+    border-color: #317eac;
     background-color: #317eac;
     font-size: 14px;
     color: white;

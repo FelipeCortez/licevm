@@ -1,5 +1,6 @@
 var container = document.getElementById('visualization');
 
+// http://visjs.org/examples/timeline/items/itemOrdering.html
 var items = new vis.DataSet([
     {id: 1,
      content: 'Segunda Guerra Mundial',
