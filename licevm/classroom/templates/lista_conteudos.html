@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div id="visualization"></div>
+
+<div class="container">
+    <script>
+    items = []
+    id = 1;
+    </script>
+    {% for topico in topicos %}
+        {% if not topico.parent %}
+            <h2><a href="{% url 'topico' id=topico.id %}">{{ topico.name }}</a></h2>
+            <p>{{ topico.description }}</p>
+            {% for subtopico in topicos %}
+                {% if subtopico.parent == topico %}
+                    <h4><a href="{% url 'topico' id=subtopico.id %}">{{ subtopico.name }}</a></h4>
+                    <script>
+                        items.push({id: id,
+                                    content:'{{ subtopico.name }}',
+                                    start:'{{ subtopico.start_date|date:"Y-m-d" }}'});
+                        id++;
+                    </script>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+
+    {% load static %}
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/vis.js' %}"></script>
+    <script>
+        console.log(items);
+        var dataset = new vis.DataSet(items);
+    </script>
+    <script src="{% static 'js/licevm.js' %}"></script>
+</div>
+{% endblock %}

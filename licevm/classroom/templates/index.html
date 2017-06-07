@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-Olê
+<div class="container">
+    <div class="jumbotron">
+    <h2>Uma nova maneira de aprender</h2>
+    <p class="lead">Com o LICEVM, é possível aprender seus assuntos favoritos de história de maneira interativa e divertida</p>
+    <p><a class="btn btn-lg btn-success" href="{% url 'lista_topicos' %}" role="button">Começar a usar</a></p>
+    </div>
+</div>
 {% endblock %}

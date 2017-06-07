@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div id="visualization"></div>
+
+<div class="container">
+
+    {% if topic.parent %}
+        <h1>{{ topic.parent.name }}</h1>
+        <h2>{{ topic.name }}</h2>
+    {% else %}
+        <h1>{{ topic.name }}</h1>
+    {% endif %}
+
+    {% for subtopic in subtopics %}
+    <h5><a href="#a{{ subtopic.id }}">{{ subtopic.name }}</a></h5>
+    {% endfor %}
+
+    <p>{{ topic.content|safe }}</p>
+    {% for subtopic in subtopics %}
+        <h3 id="a{{ subtopic.id }}">{{ subtopic.name }}</h3>
+        {{ subtopic.content|safe }}
+    {% endfor %}
+
+    {% load static %}
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/vis.js' %}"></script>
+
+    <script src="{% static 'js/quiz.js' %}"></script>
+    <script src="{% static 'js/licevm.js' %}"></script>
+</div>
+{% endblock %}
