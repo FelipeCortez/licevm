@@ -1,3 +1,11 @@
+/*
+$("full").each(function() {
+    inside = $(this).html();
+    console.log(inside);
+    $(this).empty();
+});
+*/
+
 $("quiz").each(function() {
     str = $(this).text();
     lines = str.split(/\r?\n/g);

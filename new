@@ -1,0 +1,92 @@
+Introdução
+----------
+
+A Primeira Guerra Mundial alterou radicalmente o mapa
+geopolítico da Europa, com a derrota dos Impérios Centrais
+(Áustria-Hungria, Alemanha e Império Otomano) e a tomada do
+poder pelos bolcheviques em 1917 na Rússia.  Os aliados
+vitoriosos, como <i>França, Bélgica, Itália, Grécia e
+Romênia</i> ganharam territórios, enquanto novos Estados foram
+criados a partir do colapso da Áustria-Hungria e dos impérios
+russo e otomano. Apesar do movimento pacifista após o fim da
+guerra, as perdas causaram um nacionalismo irredentista e
+revanchista em vários países europeus. O irredentismo e
+*revanchismo* eram fortes na Alemanha por causa das
+significativas perdas territoriais, coloniais e financeiras
+incorridas pelo Tratado de Versalhes. Pelo tratado, a
+_Alemanha_ perdeu cerca de 13% do seu território e todas as
+suas colônias ultramarinas, foi proibida de anexar outros
+Estados, teve que pagar indenizações e sofreu limitações
+quanto ao tamanho e a capacidade das suas forças armadas.
+Enquanto isso, a Guerra Civil Russa levava à criação da União
+Soviética.
+
+- Uma lista!
+- Que bacana
+
+</div>
+<div id="vis1" class="margins"></div>
+<div class="container">
+
+<script>
+    var items1 = [];
+    items1.push({id: items1.length,
+                content: "Teste 1",
+                start: "1999-09-09"})
+    items1.push({id: items1.length,
+                content: "Teste 2",
+                start: "1999-09-15"})
+    var dataset1 = new vis.DataSet(items1);
+    var container1 = document.getElementById('vis1');
+    var options1 = {clickToUse: true};
+    var timeline1 = new vis.Timeline(container1, dataset1, options1)
+                           .zoomOut(0.8);
+</script>
+
+Questões
+--------
+
+<quiz>
+(Cesgranrio) Com o final da 2a Guerra Mundial, os países vitoriosos procuraram criar vários mecanismos internacionais que buscassem o desenvolvimento do planeta de forma mais harmônica. É dessa época a criação do seguinte organismo:
+a) ONU - para a constituição de um exército internacional para pôr fim às guerras.
+B) OTAN - para a desmilitarização dos países ocidentais e a diminuição das zonas de conflito.
+c) GATT - para a implantação de uma tarifa única sobre os produtos e serviços internacionais.
+d) UNESCO - para a melhoria da qualidade alimentar das populações miseráveis do Terceiro Mundo.
+E) FMI - para ajudar financeiramente aos países membros, quando em dificuldades.
+</quiz>
+<quiz>
+(Fatec) O Plano Marshall se constituiu
+a) na principal meta da política externa norte-americana, que era pacificar o Extremo Oriente.
+b) num projeto de ajuda industrial aos países da América Latina.
+c) num importante instrumento de expansão do comunismo na Europa.
+d) na definição da política externa isolacionista dos EUA, paralela à montagem do complexo industrial militar.
+E) num dos meios de penetração dos capitais norte-americanos nas economias européias.
+</quiz>
+
+Uma imagem de um tanque!
+--
+
+<img src="/static/img/tanque.png">
+
+Mais uma visualização!!!
+--
+
+</div>
+<div id="vis2" class="margins"></div>
+<div class="container">
+
+<script>
+    var items2 = [];
+    items2.push({id: items2.length,
+                content: "Testando um pouquinho",
+                start: "1943-09-09"})
+    items2.push({id: items2.length,
+                content: "Testando mais",
+                start: "1945-09-15"})
+    var dataset2 = new vis.DataSet(items2);
+    var container2 = document.getElementById('vis2');
+    var options2 = {clickToUse: true};
+    var timeline2 = new vis.Timeline(container2, dataset2, options2)
+                           .zoomOut(0.8);
+</script>
+

@@ -16,7 +16,7 @@
             <!--<p>{{ topico.description }}</p>-->
             {% for subtopico in topicos %}
                 {% if subtopico.parent == topico %}
-                    <h4><a href="{% url 'topico' id=subtopico.id %}">{{ subtopico.name }}</a></h4>
+                <h4><a href="{% url 'topico' id=topico.id %}#a{{subtopico.id}}">{{ subtopico.name }}</a></h4>
                     <script>
                         items.push({id: id,
                                     content:'{{ subtopico.name }}',
@@ -34,7 +34,9 @@
     <script>
         console.log(items);
         var dataset = new vis.DataSet(items);
+        var container = document.getElementById('visualization');
+        var options = {clickToUse: true};
+        var timeline = new vis.Timeline(container, dataset, options);
     </script>
-    <script src="{% static 'js/licevm.js' %}"></script>
 </div>
 {% endblock %}
