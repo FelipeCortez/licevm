@@ -11,8 +11,9 @@
     </script>
     {% for topico in topicos %}
         {% if not topico.parent %}
+            <hr>
             <h2><a href="{% url 'topico' id=topico.id %}">{{ topico.name }}</a></h2>
-            <p>{{ topico.description }}</p>
+            <!--<p>{{ topico.description }}</p>-->
             {% for subtopico in topicos %}
                 {% if subtopico.parent == topico %}
                     <h4><a href="{% url 'topico' id=subtopico.id %}">{{ subtopico.name }}</a></h4>

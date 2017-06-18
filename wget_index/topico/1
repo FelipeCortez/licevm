@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Licevm</title><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css"><link rel="stylesheet" href="/static/css/vis.css" type="text/css"><link rel="stylesheet" href="/static/css/licevm.css" type="text/css"><link rel="stylesheet" href="https://brick.a.ssl.fastly.net/Libre+Bodoni:400/Linux+Libertine:400,400i,600"></head><body><div class="container"><div class="header clearfix"><nav><ul class="nav nav-pills pull-right"><li role="presentation"><a href="#">Página inicial</a></li><li role="presentation"><a href="/lista_topicos">Conteúdo</a></li><li role="presentation"><a href="#">Login</a></li></ul></nav><h3 class="text-fancy">LICEVM</h3></div></div><div id="visualization"></div><div class="container"><h1>Segunda Guerra Mundial</h1><h5><a href="#a2">A guerra se torna global</a></h5><h5><a href="#a3">Avanços do Eixo</a></h5><h5><a href="#a4">Novo</a></h5><p><h2>Introdução</h2><p>A Primeira Guerra Mundial alterou radicalmente o mapa geopolítico da
+    Europa, com a derrota dos Impérios Centrais (Áustria-Hungria, Alemanha e
+    Império Otomano) e a tomada do poder pelos bolcheviques em 1917 na Rússia.
+    Os aliados vitoriosos, como <i>França, Bélgica, Itália, Grécia e Romênia</i>
+    ganharam territórios, enquanto novos Estados foram criados a partir do
+    colapso da Áustria-Hungria e dos impérios russo e otomano. Apesar do
+    movimento pacifista após o fim da guerra, as perdas causaram um
+    nacionalismo irredentista e revanchista em vários países europeus. O
+    irredentismo e revanchismo eram fortes na Alemanha por causa das
+    significativas perdas territoriais, coloniais e financeiras incorridas pelo
+    Tratado de Versalhes. Pelo tratado, a Alemanha perdeu cerca de 13% do seu
+    território e todas as suas colônias ultramarinas, foi proibida de anexar
+    outros Estados, teve que pagar indenizações e sofreu limitações quanto ao
+    tamanho e a capacidade das suas forças armadas. Enquanto isso, a Guerra
+    Civil Russa levava à criação da União Soviética.</p><h2>Questões</h2><quiz>
+    (Cesgranrio) Com o final da 2a Guerra Mundial, os países vitoriosos procuraram criar vários mecanismos internacionais que buscassem o desenvolvimento do planeta de forma mais harmônica. É dessa época a criação do seguinte organismo:
+    a) ONU - para a constituição de um exército internacional para pôr fim às guerras.
+    B) OTAN - para a desmilitarização dos países ocidentais e a diminuição das zonas de conflito.
+    c) GATT - para a implantação de uma tarifa única sobre os produtos e serviços internacionais.
+    d) UNESCO - para a melhoria da qualidade alimentar das populações miseráveis do Terceiro Mundo.
+    E) FMI - para ajudar financeiramente aos países membros, quando em dificuldades.
+    </quiz><quiz>
+    (Fatec) O Plano Marshall se constituiu
+    a) na principal meta da política externa norte-americana, que era pacificar o Extremo Oriente.
+    b) num projeto de ajuda industrial aos países da América Latina.
+    c) num importante instrumento de expansão do comunismo na Europa.
+    d) na definição da política externa isolacionista dos EUA, paralela à montagem do complexo industrial militar.
+    E) num dos meios de penetração dos capitais norte-americanos nas economias européias.
+    </quiz></p><h3 id="a2">A guerra se torna global</h3><p>Em 22 de junho de 1941, a Alemanha, juntamente com outros membros europeus do Eixo e a Finlândia, invadiu a União Soviética na chamada Operação Barbarossa. Os principais alvos dessa ofensiva surpresa foram a região do Mar Báltico, Moscou e Ucrânia, com o objetivo final de acabar com a campanha de 1941 perto da linha de Arkhangelsk-Astrakhan (linha A-A), que ligava os mares Cáspio e Branco. O objetivo de Hitler era eliminar a União Soviética como uma potência militar, exterminar o comunismo, gerar o Lebensraum ("espaço vital") através da remoção da população nativa e garantir o acesso aos recursos estratégicos necessários para derrotar os rivais restantes da Alemanha.</p><h3 id="a3">Avanços do Eixo</h3>
+        O Eixo avançou
+    
+        <h3 id="a4">Novo</h3>
+        teste
+    
+
+    
+    <script src="/static/js/jquery-3.2.1.min.js"></script><script src="/static/js/vis.js"></script><script src="/static/js/quiz.js"></script><script src="/static/js/licevm.js"></script></div><div class="container"><footer class="footer"><p>&copy; 2017 Grupo</p></footer></div></body></html>
