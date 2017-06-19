@@ -7,12 +7,12 @@ def index(request):
 
 def lista_topicos(request):
     context = {}
-    context["topicos"] = Topic.objects.filter()
+    context["topicos"] = Topic.objects.filter().order_by('start_date')
     print(Topic.objects.all())
     return render(request, "lista_conteudos.html", context)
 
 def topico(request, id):
     context = {}
     context["topic"] = Topic.objects.get(id=id)
-    context["subtopics"] = Topic.objects.filter(parent=context["topic"])
+    context["subtopics"] = Topic.objects.filter(parent=context["topic"]).order_by('start_date')
     return render(request, "conteudo.html", context)

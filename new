@@ -1,92 +1,251 @@
-Introdução
-----------
-
-A Primeira Guerra Mundial alterou radicalmente o mapa
-geopolítico da Europa, com a derrota dos Impérios Centrais
-(Áustria-Hungria, Alemanha e Império Otomano) e a tomada do
-poder pelos bolcheviques em 1917 na Rússia.  Os aliados
-vitoriosos, como <i>França, Bélgica, Itália, Grécia e
-Romênia</i> ganharam territórios, enquanto novos Estados foram
-criados a partir do colapso da Áustria-Hungria e dos impérios
-russo e otomano. Apesar do movimento pacifista após o fim da
-guerra, as perdas causaram um nacionalismo irredentista e
-revanchista em vários países europeus. O irredentismo e
-*revanchismo* eram fortes na Alemanha por causa das
-significativas perdas territoriais, coloniais e financeiras
-incorridas pelo Tratado de Versalhes. Pelo tratado, a
-_Alemanha_ perdeu cerca de 13% do seu território e todas as
-suas colônias ultramarinas, foi proibida de anexar outros
-Estados, teve que pagar indenizações e sofreu limitações
-quanto ao tamanho e a capacidade das suas forças armadas.
-Enquanto isso, a Guerra Civil Russa levava à criação da União
-Soviética.
-
-- Uma lista!
-- Que bacana
-
 </div>
 <div id="vis1" class="margins"></div>
 <div class="container">
 
 <script>
+    function customOrder (a, b) {
+        // order by id
+        return a.id - b.id;
+    }
+
+    var options = {
+                    clickToUse: true,
+                    locale: "pt-br",
+                    order: customOrder,
+                    height: "450px"
+                  };
+
+    var groups1 = new vis.DataSet([
+        {id: 1, content: 'História'},
+        {id: 2, content: 'Miscelânea'}
+    ]);
+
     var items1 = [];
+    items1.push({id: 'C',
+                content: 'Período entreguerras',
+                start: "1918-11-11",
+                end: "1939-09-01",
+                type: 'background'});
     items1.push({id: items1.length,
-                content: "Teste 1",
-                start: "1999-09-09"})
+                content: "Tratado de Versalhes",
+                group: 1,
+                start: "1919-06-28"});
     items1.push({id: items1.length,
-                content: "Teste 2",
-                start: "1999-09-15"})
+                content: "Partido Fascista fundado",
+                group: 1,
+                start: "1921-11-07"});
+    items1.push({id: items1.length,
+                content: "Criação da União Soviética",
+                group: 1,
+                start: "1922-12-30"});
+    items1.push({id: items1.length,
+                content: "Hitler tenta golpe",
+                group: 1,
+                start: "1923-11-08"});
+    items1.push({id: items1.length,
+                content: "Morte de Lenin",
+                group: 1,
+                start: "1924-01-21"});
+    items1.push({id: items1.length,
+                content: "Mein Kampf publicado",
+                group: 1,
+                start: "1925-07-18"});
+    items1.push({id: items1.length,
+                content: "Grande Depressão",
+                group: 1,
+                start: "1929-09-04"});
+    items1.push({id: items1.length,
+                content: "O Japão invade a Manchúria",
+                group: 1,
+                start: "1932-09-18"});
+    items1.push({id: items1.length,
+                content: "Hitler torna-se chanceler",
+                group: 1,
+                start: "1933"});
+    items1.push({id: items1.length,
+                content: "Crise da Renânia",
+                group: 1,
+                start: "1936-03-07"});
+    items1.push({id: items1.length,
+                content: "Início da Segunda Guerra Sino-Japonesa",
+                group: 1,
+                start: "1937-07-07"});
+    items1.push({id: items1.length,
+                content: "Áustria anexada (Anschluß)",
+                group: 1,
+                start: "1938-05-12"});
+    items1.push({id: items1.length,
+                content: "Pacto Molotov–Ribbentrop",
+                group: 1,
+                start: "1939-08-23"});
+    items1.push({id: items1.length,
+                content: "Guerra Civil Espanhola",
+                group: 1,
+                start: "1936-07-17",
+                end: "1939-04-01"});
+    items1.push({id: items1.length,
+                content: "Início da Segunda Guerra",
+                group: 1,
+                start: "1939-09-01"});
+    items1.push({id: items1.length,
+                content: "Leis de Nuremberg",
+                group: 1,
+                start: "1935-09-15"});
+    items1.push({id: items1.length,
+                content: "Era Vargas",
+                group: 1,
+                start: "1930",
+                end: "1945"});
+
+
+
+    items1.push({id: items1.length,
+                content: "Primeira transmissão comercial de rádio",
+                group: 2,
+                start: "1920-11-02"
+                });
+    items1.push({id: items1.length,
+                content: "Invenção da televisão",
+                group: 2,
+                start: "1927"
+                });
+    items1.push({id: items1.length,
+                content: "Primeiro voo transatlântico",
+                group: 2,
+                start: "1927-05-20"
+                });
+    items1.push({id: items1.length,
+                content: "Penicilina descoberta",
+                group: 2,
+                start: "1929-02-14"
+                });
+    items1.push({id: items1.length,
+                content: "Cristo Redentor completado",
+                group: 2,
+                start: "1931-10-12"
+                });
+    items1.push({id: items1.length,
+                content: "Aldous Huxley - Admirável Mundo Novo",
+                group: 2,
+                start: "1932"
+                });
+    items1.push({id: items1.length,
+                content: "Primeiro longa animado (Branca de Neve)",
+                group: 2,
+                start: "1938"
+                });
+    items1.push({id: items1.length,
+                content: "O Mágico de Oz",
+                group: 2,
+                start: "1939"
+                });
+    items1.push({id: items1.length,
+                content: "Primeiro voo comercial",
+                group: 2,
+                start: "1939"
+                });
     var dataset1 = new vis.DataSet(items1);
     var container1 = document.getElementById('vis1');
-    var options1 = {clickToUse: true};
-    var timeline1 = new vis.Timeline(container1, dataset1, options1)
-                           .zoomOut(0.8);
+    var timeline1 = new vis.Timeline(container1, dataset1, groups1, options)
+                           .zoomOut(1);
 </script>
 
-Questões
---------
+Chama-se de Período Entreguerras os anos compreendidos entre o fim da Primeira
+Guerra Mundial, em 1918, e o início da Segunda Grande Guerra, em 1939. Para o
+historiador Eric Hobsbawn, há uma continuidade da Primeira Guerra Mundial no
+conflito iniciado em 1939, assim, os 21 anos que separam os dois acontecimentos
+seriam uma pausa nas ações bélicas, mas os eventos do período seriam o elo
+entre elas.
 
-<quiz>
-(Cesgranrio) Com o final da 2a Guerra Mundial, os países vitoriosos procuraram criar vários mecanismos internacionais que buscassem o desenvolvimento do planeta de forma mais harmônica. É dessa época a criação do seguinte organismo:
-a) ONU - para a constituição de um exército internacional para pôr fim às guerras.
-B) OTAN - para a desmilitarização dos países ocidentais e a diminuição das zonas de conflito.
-c) GATT - para a implantação de uma tarifa única sobre os produtos e serviços internacionais.
-d) UNESCO - para a melhoria da qualidade alimentar das populações miseráveis do Terceiro Mundo.
-E) FMI - para ajudar financeiramente aos países membros, quando em dificuldades.
-</quiz>
-<quiz>
-(Fatec) O Plano Marshall se constituiu
-a) na principal meta da política externa norte-americana, que era pacificar o Extremo Oriente.
-b) num projeto de ajuda industrial aos países da América Latina.
-c) num importante instrumento de expansão do comunismo na Europa.
-d) na definição da política externa isolacionista dos EUA, paralela à montagem do complexo industrial militar.
-E) num dos meios de penetração dos capitais norte-americanos nas economias européias.
-</quiz>
+Após o fim da Primeira Guerra, foi assinado entre as potências europeias o
+Tratado de Versalhes, em 1919. Derrotada na guerra, o Tratado impôs sanções à
+Alemanha, dentre as quais a perda dos territórios conquistados, como a
+Alsácia-Lorena e as colônias africanas e asiáticas; a redução das Forças
+Armadas; proibição de fabricação de armamentos pesados e o pagamento de
+indenização aos países Aliados, vencedores do conflito. O alto valor da
+indenização e os custos de 4 anos de guerra deixaram a Alemanha em uma profunda
+crise econômica.
 
-Uma imagem de um tanque!
---
+Mas não só a Alemanha saiu destruída da Grande Guerra. Também o restante dos
+países europeus envolvidos precisou encarar a reconstrução, e o dinheiro para
+isso veio sobretudo dos Estados Unidos da América, considerado o grande
+vencedor da Guerra. A década de 1920 foi de euforia econômica naquele país, e é
+desse momento o chamado american way of life (estilo de vida americano),
+caracterizado pela alta produção e consumo em massa. Produtos como carros e
+eletrodomésticos tornam-se acessíveis para parte da população americana, que
+consumia também cinema, música (jazz e charleston eram os ritmos mais
+populares) e esportes eram populares e muito procurados.
 
-<img src="/static/img/tanque.png">
+A euforia econômica, no entanto, logo teve fim. A desigualdade social era
+gritante: metade da população estava abaixo da linha da pobreza. A modernização
+da agricultura resultou em produção superior à demanda, diminuindo o preço dos
+alimentos e aumentando os estoques. Também a produção industrial atingiu níveis
+maiores do que a população era capaz de consumir, resultando em demissões e
+diminuição da produção.
 
-Mais uma visualização!!!
---
+Em 1929, o mercado não aguentou a especulação de ações na Bolsa de Valores e
+essas passaram a perder valor, culminando no Crash (queda) da Bolsa de Nova
+York, em 29 de outubro de 1929, e no início de uma grave crise econômica que
+atingiria todos os países de economia capitalista. A crise começaria a ser
+resolvida com a adoção, em 1933, do New Deal, conjunto de medidas adotadas pelo
+presidente Roosevelt.
 
+A Alemanha, que no decorrer dos anos 1920 se recuperava da Grande Guerra,
+enfrentou recuo econômico com a Crise de 1929, fortalecendo o Partido
+Nacional-Socialista dos Trabalhadores Alemães (Partido Nazista), fundado em
+1920. Liderado por Adolf Hitler, o Partido Nazista culpabilizava judeus pela
+situação econômica do país e defendia a superioridade alemã. Em 1933, Hitler
+chegou ao poder, apoiado por grande parte da sociedade alemã, que via no seu
+discurso a saída para a crise econômica e moral em que se encontrava desde a
+derrota em 1918.
+
+Também a Itália viveu no período a ascensão de um regime totalitário, o
+fascista, cujo líder era Benito Mussolini. Como o nazismo, era antiliberal e
+anticomunista, e via na construção de um Estado forte e autoritário a chave
+para o desenvolvimento italiano. O Partido Fascista chegou ao poder em 1922,
+quando o rei Vítor Emanuel III nomeou Mussolini primeiro-ministro.
+
+Itália e Alemanha formaram, em 1936, uma aliança de proteção mútua, o Eixo
+Roma-Berlim, que lutaria junto na Segunda Guerra Mundial. Foi também em 1936
+que o general espanhol Francisco Franco se recusou a aceitar a vitória da
+Frente Popular, formado por socialistas e republicanos, e deu início ao
+conflito conhecido como Guerra Civil Espanhola. Franco, simpatizante do
+fascismo, recebeu ajuda de alemães e italianos para derrotar a Frente Popular e
+instalar um governo forte e autoritário, o qual durou até 1975, quando morreu o
+general.
+
+<div id="interactive_map" style="height:400px; width: 700px; background-image:url('/static/img/mapa_1919.png')">
+
+<div class="btn-group" role="group" aria-label="...">
+<button id="btn1919" type="button" class="btn btn-default">1919</button>
+<button id="btn1939" type="button" class="btn btn-default">1939</button>
+<button id="btn1944" type="button" class="btn btn-default">1944</button>
+<button id="btn1945" type="button" class="btn btn-default">1945</button>
+<button id="btn2017" type="button" class="btn btn-default">2017</button>
 </div>
-<div id="vis2" class="margins"></div>
-<div class="container">
+</div>
 
-<script>
-    var items2 = [];
-    items2.push({id: items2.length,
-                content: "Testando um pouquinho",
-                start: "1943-09-09"})
-    items2.push({id: items2.length,
-                content: "Testando mais",
-                start: "1945-09-15"})
-    var dataset2 = new vis.DataSet(items2);
-    var container2 = document.getElementById('vis2');
-    var options2 = {clickToUse: true};
-    var timeline2 = new vis.Timeline(container2, dataset2, options2)
-                           .zoomOut(0.8);
+<script type="text/javascript">
+$("#btn1919").click(function() {
+    $("#interactive_map").css("background-image", "url('/static/img/mapa_1919.png'");
+});
+$("#btn1939").click(function() {
+    $("#interactive_map").css("background-image", "url('/static/img/mapa_1939.png'");
+});
+$("#btn1944").click(function() {
+    $("#interactive_map").css("background-image", "url('/static/img/mapa_1944.png'");
+});
+$("#btn1945").click(function() {
+    $("#interactive_map").css("background-image", "url('/static/img/mapa_1945.png'");
+});
+$("#btn2017").click(function() {
+    $("#interactive_map").css("background-image", "url('/static/img/mapa_2017.png'");
+});
 </script>
 
+
+Referências
+-----------
+
+- [ThoughtCo - 1920](https://www.thoughtco.com/1920s-timeline-1779949)
+- [ThoughtCo - 1930](https://www.thoughtco.com/1930s-timeline-1779950)

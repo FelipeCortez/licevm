@@ -20,6 +20,14 @@ class Topic(models.Model):
             date = "{}".format(self.start_date.year)
         return "{} ({}){}".format(self.name, date, parent_str)
 
+    @property
+    def title_with_dates(self):
+        if self.start_date.year != self.end_date.year:
+            date = "{} - {}".format(self.start_date.year, self.end_date.year)
+        else:
+            date = "{}".format(self.start_date.year)
+        return "{} ({})".format(self.name, date)
+
 class Quiz(models.Model):
     explanation = models.TextField(blank=True) # explicação opcional da resposta
     content = models.TextField() # texto que será manipulado por JavaScript

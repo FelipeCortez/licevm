@@ -1,27 +1,27 @@
 {% extends "base.html" %}
 {% load filters %}
 
-
 {% block content %}
 <div class="container">
     {% load static %}
+    <link rel="stylesheet" href="{% static 'css/custom_vis.css' %}" type="text/css">
     <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
     <script src="{% static 'js/vis.js' %}"></script>
 
     {% if topic.parent %}
         <h1>{{ topic.parent.name }}</h1>
-        <h2>{{ topic.name }}</h2>
+        <h2>{{ topic.title_with_dates }}</h2>
     {% else %}
-        <h1>{{ topic.name }}</h1>
+        <h1>{{ topic.title_with_dates }}</h1>
     {% endif %}
 
     {% for subtopic in subtopics %}
-    <h5><a href="#a{{ subtopic.id }}">{{ subtopic.name }}</a></h5>
+    <h5><a href="#a{{ subtopic.id }}">{{ subtopic.title_with_dates }}</a></h5>
     {% endfor %}
 
     <p>{{ topic.content|markdown|safe }}</p>
     {% for subtopic in subtopics %}
-        <h3 id="a{{ subtopic.id }}">{{ subtopic.name }}</h3>
+        <h3 id="a{{ subtopic.id }}">{{ subtopic.title_with_dates }}</h3>
         {{ subtopic.content|markdown|safe }}
     {% endfor %}
 

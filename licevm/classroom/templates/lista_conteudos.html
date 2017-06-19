@@ -5,24 +5,32 @@
 <div id="visualization"></div>
 
 <div class="container">
+
+<style type="text/css">
+.vis-item .vis-item-overflow {
+    height: 2px;
+    overflow: visible !important;
+}
+</style>
     <script>
     items = []
     id = 1;
     </script>
     {% for topico in topicos %}
         {% if not topico.parent %}
+            <script>
+                items.push({id: id,
+                            content:'{{ topico.name }}',
+                            start:'{{ topico.start_date|date:"Y-m-d" }}',
+                            end:'{{ topico.end_date|date:"Y-m-d" }}'});
+                id++;
+            </script>
             <hr>
-            <h2><a href="{% url 'topico' id=topico.id %}">{{ topico.name }}</a></h2>
+            <h2><a href="{% url 'topico' id=topico.id %}">{{ topico.title_with_dates }}</a></h2>
             <!--<p>{{ topico.description }}</p>-->
             {% for subtopico in topicos %}
                 {% if subtopico.parent == topico %}
-                <h4><a href="{% url 'topico' id=topico.id %}#a{{subtopico.id}}">{{ subtopico.name }}</a></h4>
-                    <script>
-                        items.push({id: id,
-                                    content:'{{ subtopico.name }}',
-                                    start:'{{ subtopico.start_date|date:"Y-m-d" }}'});
-                        id++;
-                    </script>
+                    <h4><a href="{% url 'topico' id=subtopico.id %}">{{ subtopico.title_with_dates }}</a></h4>
                 {% endif %}
             {% endfor %}
         {% endif %}
@@ -30,13 +38,15 @@
 
     {% load static %}
     <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/moment.js' %}"></script>
     <script src="{% static 'js/vis.js' %}"></script>
     <script>
         console.log(items);
         var dataset = new vis.DataSet(items);
         var container = document.getElementById('visualization');
-        var options = {clickToUse: true};
-        var timeline = new vis.Timeline(container, dataset, options);
+        var options = {clickToUse: true, locale: "pt-br"};
+        var timeline = new vis.Timeline(container, dataset, options)
+                              .zoomOut(1);
     </script>
 </div>
 {% endblock %}
